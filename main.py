@@ -10,6 +10,7 @@ class ChatbotWindow(QMainWindow):
         #add chat area widget
         self.chat_area = QTextEdit(self)
         self.chat_area.setGeometry(10, 10, 480, 320)
+        self.chat_area.setReadOnly(True)
 
         #add the input field
         self.input_field = QLineEdit(self)
